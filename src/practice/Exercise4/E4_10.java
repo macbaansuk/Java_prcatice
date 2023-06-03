@@ -12,6 +12,7 @@ package practice.Exercise4;
              System.out.println(123 % 12);
              System.out.println(12 % 1);
              System.out.println("sum=" + sum);
+             //
 
          }
      }
