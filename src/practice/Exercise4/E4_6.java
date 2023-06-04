@@ -13,19 +13,15 @@ class E4_6 {
 
 
 
-        for (int i = 1; i <= 2; i++) {
-            for (int j = 1; j <= 2; j++) {
+        for (int i = 1; i <= 6; i++) {
+            for (int j = 1; j <= 6; j++) {
                 if(i + j == 6){
-                    System.out.println("a = "+ i + "b = "+ j);
+                    System.out.printf("( %d, %d )%n", i, j);
                 }
             }
         }
 
-        //A와 B의 합이 6인 경우의 수
-        // A + B == 6;
-        if (A + B == 6) {
-            System.out.println("A =" + A + " B=" + B);
-        }
+
     }
 
 
