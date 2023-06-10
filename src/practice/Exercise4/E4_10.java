@@ -7,11 +7,28 @@ package practice.Exercise4;
          public static void main(String[] args) {
              int num = 12345;
              int sum = 0;
-             System.out.println(12345 % 1234);
-             System.out.println(1234 % 123);
-             System.out.println(123 % 12);
-             System.out.println(12 % 1);
-             System.out.println("sum=" + sum);
+//             System.out.println(12345 % 1234);
+//             System.out.println(1234 % 123);
+//             System.out.println(123 % 12);
+//             System.out.println(12 % 1);
+//             System.out.println("sum=" + sum);
+
+//             while(num!=0){
+//                sum += num % 10;
+//                 System.out.println("sum" + sum + ", num" + num);
+//                num /= 10;
+//             }
+
+
+             for(int i=1; ; i++){
+                 sum += num % 10;
+                 num /= 10;
+                 System.out.println("num = " +num);
+                 if(num<=0){
+                    break;
+                 }
+             }
+                 System.out.println("sum = " + sum);
              //
 
          }
