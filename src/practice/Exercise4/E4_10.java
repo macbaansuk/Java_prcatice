@@ -28,7 +28,7 @@ package practice.Exercise4;
 //                    break;
 //                 }
 //             }
-                 System.out.println("sum = " + sum);
+//                 System.out.println("sum = " + sum);
              //
 
          }
