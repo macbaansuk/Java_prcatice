@@ -20,14 +20,14 @@ package practice.Exercise4;
 //             }
 
 
-             for(int i=1; ; i++){
-                 sum += num % 10;
-                 num /= 10;
-                 System.out.println("num = " +num);
-                 if(num<=0){
-                    break;
-                 }
-             }
+//             for(int i=1; ; i++){
+//                 sum += num % 10;
+//                 num /= 10;
+//                 System.out.println("num = " +num);
+//                 if(num<=0){
+//                    break;
+//                 }
+//             }
                  System.out.println("sum = " + sum);
              //
 
