@@ -6,15 +6,17 @@ package practice.Exercise4;
 //         100이상이 되는지 구하시오.
 
          int sum = 0;
-         int i =0;
+         int j = 1; //부호 바꾸는 변수
+         int num = 0;
 
-         while(sum<=100){
-             sum = i + (-(i+1));
-             System.out.println("i = " + i);
-             System.out.println("sum = " + sum);
-             i++;
-         }
+        for(int i =1; ;i++,j=-j){
+            System.out.println("j= " + j);
+            sum += i * j;
+            System.out.println("i= " + i);
+            if(sum == 100)
+                break;
+            System.out.println("sum =" + sum);
+        }
 
-         }
-
+     }
 }

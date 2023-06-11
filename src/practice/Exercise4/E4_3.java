@@ -4,10 +4,15 @@ package practice.Exercise4;
  class E4_3 {
     public static void main(String[] args) {
         int sum = 0;
+        int totalSum = 0;//--sum의 총합 변수 추가
         for(int i = 0; i<=10; i++){
             //1씩 증가하면서 계속 더하기
              sum += i;
+             
+             //여기서 sum의 총합을 구하지 않음
+            totalSum += sum;
+            
         }
-        System.out.println("sum = " + sum);
+        System.out.println("totalSum = " + totalSum);
     }
 }
