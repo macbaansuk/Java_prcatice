@@ -10,29 +10,31 @@ package practice.Exercise5;
             // 큰 금액의 동전을 우선적으로 거슬러 줘야한다.
              int[] coinUnit = {500, 100, 50, 10};
              int money = 2680;
-             System.out.println("money="+money);
+             int money2 = 0;
+             int coin = 0;
+             System.out.println("money=" + money);
              for(int i=0;i<coinUnit.length;i++) {
-                 money %= coinUnit[i];
-                 System.out.println("동전:" + coinUnit[i]);
-//                 System.out.println(money  %= coinUnit[i]);
-//                 System.out.println(money  %= coinUnit[i] /= coinUnit[i]);
-                 System.out.println("money : " + money);
-                 money /= coinUnit[i];
-
+                 coin = money %  coinUnit[i];
+                 System.out.println("동전:" + coinUnit[i]); // 500 100 50 10
+                 System.out.println("coin : " + coin);
+                 money2 =  coin / coinUnit[i]; //  100
+                 System.out.println("money : " + money2);
+                 if(money <= 0)
+                     break;
              }
 //                 System.out.println("500원: " + money);
 //                 System.out.println("100원: ");
 //                 System.out.println("50원: ");
 //                 System.out.println("10원: ");
 
-//     System.out.println(2680 / 500); //money / coinUnit[1]
-//     System.out.println(2680 % 500);//money % coinUnit[1]
-//     System.out.println(180 / 100);//money % coinUnit[1] / coinUnit[2]
-//     System.out.println(180 % 100);//money % coinUnit[1] % [2]
-//     System.out.println(80 / 50);//money % coinUnit[1]
-//     System.out.println(80 % 50);//money % coinUnit[1]
-//     System.out.println(30 / 10);//money % coinUnit[1]
-//     System.out.println(30 % 10);//money % coinUnit[1]
-         } // main
+//     System.out.println(2680 / 500); //5   money / coinUnit[1]
+//     System.out.println(2680 % 500);// 180 money % coinUnit[1]
+//     System.out.println(180 / 100);//1 money % coinUnit[1] / coinUnit[2]
+//     System.out.println(180 % 100);//80 money % coinUnit[1] % [2]
+//     System.out.println(80 / 50);//1 money % coinUnit[1]
+//     System.out.println(80 % 50);// 30 money % coinUnit[1]
+//     System.out.println(30 / 10);//3  money % coinUnit[1]
+//     System.out.println(30 % 10);// 0 money % coinUnit[1]
+     } // main
  }
 
