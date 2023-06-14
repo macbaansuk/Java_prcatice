@@ -26,9 +26,12 @@ package practice.Exercise6;
              this.math = math;
          }
 
+         float average(){
+             float avg = (float)(kor+eng+math)/3;
+             return ( (float)(Math.round(avg*10)/10.0));
+         }
          String info(){
-             String sout
-             return
+             return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + average();
          }
      }
 
