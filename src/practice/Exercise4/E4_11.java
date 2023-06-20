@@ -12,20 +12,21 @@ package practice.Exercise4;
              System.out.print(num1+","+num2);
 
              for (int i = 0 ; i < 8 ; i++ ) {
-                 int numi = 2;
-                 System.out.println("numi" + numi);
-                 System.out.print("," + num3);
-//                 (i+1) = i + (i-1);
+                 num3 = num1 + num2; //num3 = 2, 3, 5, 8
+//                 System.out.print("," + num3);
+                 num1 = num2; //num1 = 1 , 2 , 3
+                 System.out.println("num1=" + num1);
+                 num2 = num3; //num2 = 2 , 3 , 5
+                 System.out.println("num2=" + num2);
              }
 
 //         1,1,2,3,5,8,13,21,
-         //1+1 = 2
-         //1+2 = 3
+         //1+1 = 2 num1, num2
+         //1+2 = 3 num2
          //2+3 = 5
          //3+5 = 8
          //5+8 = 13
          //8+13 = 21
-
          }
      }
 

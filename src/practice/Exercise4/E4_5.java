@@ -12,14 +12,14 @@ package practice.Exercise4;
          //while
          int i = 0; //초기화
          while(i <= 10) { //조건식
+             i++;
              int j = 0;
              while(j<i) {
                  System.out.println("*");
-                 System.out.println("j"+j);
+//                 System.out.println("j"+j);
                  j++;
              }
          System.out.println();
-             i++;
          }
 
 
