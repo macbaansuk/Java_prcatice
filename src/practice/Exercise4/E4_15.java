@@ -5,20 +5,16 @@ package practice.Exercise4;
 //        [Hint] 나머지 연산자를 이용하시오
  class E4_15 {
      public static void main(String[] args) {
+         //숫자를 역으로 바꾸는것이 point 
          int number = 12321;
          int tmp = number;
          int result =0; // 변수 number를 거꾸로 변환해서 담을 변수
          while(tmp !=0) {
-/*
-(1) 알맞은 코드를 넣어 완성하시오.
-*/
-             number %= 10;
-             System.out.println("나머지:" + number);
-
-
-
-
+             result = result*10 + tmp % 10; // result에 /10을 하는대신 *10을하면 거꾸로 구할수있다
+             tmp/=10;
+             System.out.println("tmp:" + tmp);
          }
+             System.out.println("result:" + result);
          if(number == result)
              System.out.println( number + "는 회문수 입니다.");
          else
